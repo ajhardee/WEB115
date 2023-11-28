@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <!-- Add any necessary CSS for styling here -->
+</head>
+<body>
+    <header>
+        <!-- Banner with your name, course, section, and "Build Your Meal Plan" -->
+        <h1>Alex Hardee | WEB-115 | 0002</h1>
+        <h2>Build Your Meal Plan</h2>
+    </header>
+
+    <form id="mealPlanForm">
+        <!-- Form elements for personal information -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Single goal input field for each day -->
+        <label for="goal">Goals for the Week:</label>
+        <textarea id="goal" name="goal" rows="4" placeholder=
+"Breakfast
+Snack 1
+Lunch
+Snack 2
+Dinner"></textarea>
+
+        <!-- Form button to generate the meal plan -->
+        <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+
+
+        <!-- Options to clear, print, and download the planner -->
+        <button type="button" onclick="clearPlanner()">Clear Planner</button>
+        <button type="button" onclick="printPlanner()">Print Planner</button>
+        <button type="button" onclick="downloadPlanner()">Download Planner</button>
+    </form>
+
+    <!-- Include your external JavaScript file -->
+    <script src="projectJS.js"></script>
+</body>
+</html>
